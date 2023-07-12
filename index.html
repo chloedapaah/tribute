@@ -1,0 +1,182 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Virgil Tribute Page </title>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <style>
+
+      body {
+        background-color: #00203fff;
+        color: #FFFAF0;
+        font-family: "Montserrat", sans-serif;
+        text-align: left;
+        overflow-x: hidden;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .blue {
+        background-color: #00203fff;
+        color: #FFFAF0;
+        box-sizing: border-box;
+      }
+
+      #first-div {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #title {
+        font-size: 48px;
+        margin: auto;
+        font-weight: 400;
+        text-align: center;
+        
+      }
+
+      #second-div {
+        background-color: #FFFAF0;
+        color: #00203fff;
+        right: 0px;
+        left: 0px;
+        width: 100%;
+        height: 300px;
+        padding: 150px 60px;
+        font-size: 20px;
+        
+      }
+
+      p {
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      #bio {
+        min-width: 60%;
+      }
+
+      #head {
+        float: left;
+        width: 500px;
+        height: auto;
+        margin-right: 35px;
+        margin-bottom: 60px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .img-container {
+        box-sizing: border-box;
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+
+      .img-container-2 {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+        padding: 5px;
+      }
+
+      #third-div a {
+        padding: 10px;
+        display: block;
+        width: 93px;
+      }
+
+      a:link, a:visited {
+          color: #FFFAF0;
+          text-decoration: underline;
+      }
+
+      a:hover {
+        color: #00FFFF;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .responsive {
+          width:100%;
+          height: 1000px;
+          background-color: #FFFAF0;
+          color: #00203fff;
+          right: 0px;
+          left: 0px;
+          font-size: 2vw;
+        }
+        .responsive2 {
+          clear: left;
+          width: 80%;
+        }
+
+        #head {
+          width: 400px;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main id="main">
+      <div id="first-div" class="blue">
+        <h1 id="title">Virgil Abloh</h1>
+      </div>
+
+      <div class="responsive">
+        <div id="second-div" class="clearfix">
+          <img id="head" src="virgil.jpeg" alt="Virgil Abloh">
+          <div class="responsive2">
+                <p id="bio">
+                  Virgil Abloh was an influential fashion designer and entrepreneur. A trained architect, 
+                  Abloh entered the fashion world in 2009 with an internship at Fendi, along with rapper Kanye West. 
+                  He then became a creative director at Donda in 2010. In 2013, Abloh founded Off-White, an Itaian 
+                  luxury fashion label. In 2018, Abloh was named as one of the 100 most influential people in the 
+                  world by <i>Time</i> magazine following his accomplishment as the first African American artistic 
+                  director at a French luxury fashion house when he joined LMVH. Bridging streetwear and luxury clothing,
+                  Abloh became a huge inspirational figure and managed to reach a level of global fame unusual for a designer.
+                </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="blue clearfix">
+        <h1 style="margin-top: 100px; margin-left: 10px; font-size: 35px;">Some projects</h1>
+        <div class="img-container">
+          <img src="virgil1.png" alt="One of Virgil's Designs" style="width:100%;">
+        </div>
+        <div class="img-container">
+          <img src="virgil2.png" alt="Design shown on model" style="width:100%;">
+        </div>
+        <div class="img-container">
+          <img src="virgil3.jpg" alt="Air Jordan 1 for Nike" style="width:100%;">
+        </div>
+
+        <div class="img-container-2">
+          <img src="virgil4.jpg" alt="IKEA receipt rug" style="width:100%;">
+        </div>
+        <div class="img-container-2">
+          <img src="virgil5.jpg" alt="HOME Collection for Off-White" style="width:100%;">
+        </div>
+      </div>
+
+      <div id="third-div" class="blue">
+        <p style="margin-left: 10px; margin-top: 70px; margin-bottom: 25px;">Learn more:</p>
+        <a href="https://en.wikipedia.org/wiki/Virgil_Abloh" target="_blank">Wikipedia</a>
+        <a href="https://canary---yellow.com" target="_blank">Virgil Abloh</a>
+      </div>
+    </main>
+    
+  </body>
+</html>
